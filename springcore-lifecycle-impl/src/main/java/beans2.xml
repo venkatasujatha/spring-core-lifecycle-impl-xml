@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean name="s1" class="com.example.demo.lifecycle.Samosa" init-method="init" destroy-method="destroy">
+        <constructor-arg type="double" index="0" >
+        <value>12</value>
+        </constructor-arg>
+      
+        
+        </bean>
+        
+        <bean name="p1" class="com.example.demo.lifecycle.Pepsi" >
+       
+       <property name="price" value="20"></property>
+        
+       
+               </bean>
+
+     </beans>
